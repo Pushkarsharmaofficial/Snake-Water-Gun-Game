@@ -6,7 +6,7 @@ import pyttsx3
 -1 for water 
 0 for gun
 '''
-computer = random.choice([-1,0,1])
+
 print("Welcome to Snake,Water&Gun Game!!")
 n=int(input("Enter the no. of rounds:"))
 round= 1
@@ -25,6 +25,7 @@ while round<=n:
   if youstr in valid_input :
     youDict = {"s": 1, "w": -1, "g": 0}
     reverseDict = {1: "Snake", -1: "Water", 0: "Gun"}
+    computer = random.choice([-1,0,1])
 
     you = youDict[youstr]
 
